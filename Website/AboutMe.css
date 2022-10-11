@@ -1,0 +1,111 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 222px;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.Logo a{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: 'comic sans ms';
+    color: white;
+}
+.Logo a:hover{
+    color: aqua;
+    transition: .5s;
+}
+.menu{
+    float: right;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url(bg.jpg);
+    z-index: 1;
+    border-bottom: 3px solid black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: aqua;
+    text-decoration: underline;
+    transition: .5s;
+}
+a.tbl-biru{
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+a.tbl-biru:hover{
+    background: orangered;
+    text-decoration: none;
+    transition: .5s;
+}
+h1{
+    color: white;
+    font-family: 'comic sans ms';
+    text-shadow: 1px 1px 4px black;
+}
+h1:hover{
+    font-weight: bold;
+    font-size: larger;
+}
+.wrapper img{
+    width: 4cm;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px black;
+    padding: 5px;
+    background: white;
+    margin: 15px;
+    transition: 0.1s;
+    opacity: 75%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 2cm;
+}
+.wrapper img:hover{
+    opacity: 100%;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 6px black;
+}
+.wrapper .kolom p{
+    color: white;
+    text-align: justify;
+}

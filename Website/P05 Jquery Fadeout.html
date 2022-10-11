@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Challenge P05 Jquery Fadeout</title>
+  <style type="text/css">
+  body{
+    background-image: linear-gradient(aqua, white);
+     font-family: Comic Sans MS;
+    display: center;
+  }
+  h1{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  h3:hover{
+    color: White;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: underline;
+    
+  }
+  table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+  table tr td {
+    text-align: center;
+  }
+  table tr th{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    background-color: steelblue;
+  }
+  table tr button{
+    width: 100%;
+  }
+  button{
+      border-radius: 10px;
+      height: 25px;
+      background-color: #80e0e6;
+      color: black;
+      text-shadow: 1px 1px 2pc white;
+      box-shadow: 1px 1px 1px grey;
+      width: 15%;
+      text-size: 30px;
+    }
+    button:hover{
+      color: white;
+      background-color: maroon;
+    }
+     td{
+      color: black;
+      font-family: Comic Sans MS;
+    }
+    td:hover{
+      color: white;
+      background-color: maroon;
+    }
+
+  </style>
+  
+  </head>
+  <body>
+  <center>
+    <center>
+      <h1>Table Nama Mahasiswa TI KIP2021 P1</h1>
+    <br>
+    <h2>Challenge P05 Jquery Fadeout</h2>
+    <table border="1" width="50%" height="10px class="tabelku>
+      <tr>
+        <center><th width="5%">No</th></center>
+        <center><th>Nama Lengkap</th></center>
+        <center><th>NIM</th></center>
+        <center><th>Aksi</th></center>
+      </tr>
+      
+      <tr id="row__1">
+        <td>1</td> 
+        <td class="nama_mhs">Abi Fajar Ahmad Fauzi</td>
+        <td class="NIM_mhs">41215619</td>
+        <td class="hapus" id="hapus__1">Hapus</td>
+      </tr>
+      
+       <tr id="row__2">
+        <td>2</td> 
+        <td class="nama_mhs">Ade Valentino</td>
+        <td class="NIM_mhs">41215715</td>
+        <td class="hapus" id="hapus__2">Hapus</td>
+      </tr>
+      
+      <tr id="row__3">
+        <td>3</td> 
+        <td class="nama_mhs">Akdan Amrullah</td>
+        <td class="NIM_mhs">41215350</td>
+        <td class="hapus" id="hapus__3">Hapus</td>
+      </tr>
+      
+      <tr id="row__4">
+        <td>4</td> 
+        <td class="nama_mhs">Alimun Hakim</td>
+        <td class="NIM_mhs">41215353</td>
+        <td class="hapus" id="hapus__4">Hapus</td>
+      </tr>
+      
+      <tr id="row__5">
+        <td>5</td> 
+        <td class="nama_mhs">Anita Ayu Hardani</td>
+        <td class="NIM_mhs">41215359</td>
+        <td class="hapus" id="hapus__5">Hapus</td>
+      </tr>
+      
+      <tr id="row__6">
+        <td>6</td> 
+        <td class="nama_mhs">Anjar Ayuning Lestari</td>
+        <td class="NIM_mhs">41215360</td>
+        <td class="hapus" id="hapus__6">Hapus</td>
+      </tr>
+      
+      <tr id="row__7">
+        <td>7</td> 
+        <td class="nama_mhs">Atthar Hafizha Luthfi</td>
+        <td class="NIM_mhs">41215362</td>
+        <td class="hapus" id="hapus__7">Hapus</td>
+      </tr>
+     
+      <tr id="row__8">
+        <td>8</td> 
+        <td class="nama_mhs">Azzahra Moudy Fajria</td>
+        <td class="NIM_mhs">41215364</td>
+        <td class="hapus" id="hapus__8">Hapus</td>
+      </tr>
+      
+      <tr id="row__9">
+        <td>9</td> 
+        <td class="nama_mhs">Bagus Hermawan</td>
+        <td class="NIM_mhs">41215366</td>
+        <td class="hapus" id="hapus__9">Hapus</td>
+      </tr>
+      
+      <tr id="row__10">
+        <td>10</td> 
+        <td class="nama_mhs">Daffa Ezra Pratama</td>
+        <td class="NIM_mhs">41215482</td>
+        <td class="hapus" id="hapus__10">Hapus</td>
+      </tr>
+     
+      <tr>
+        <td colspan="4">
+        <button onclick="confirm('yakin ingin melihat data lengkap?')" >Lainnya</button></td>
+      </tr>
+    </table>
+    <br>
+     <a href="Portofolio.html"><button onclick="confirm('yakin untuk kembali?')" href>Kembali</button></a>
+  </center>
+  <script>
+  $(document).ready(function(){
+   // alert(0)
+   $('.nama_mhs').click(function(){
+    //alert(1)
+    let isi = $(this).text();
+    //alert(isi);
+
+    let isi2 = prompt('ubah dengan:', isi);
+    if (!isi2) return;
+
+   // alert(isi2);
+
+   $(this).text(isi2);
+
+
+   })
+
+
+   $('.NIM_mhs').click(function(){
+    //alert(4)
+    let isi = $(this).text();
+    //alert(isi);
+
+    let isi4 = prompt('ubah dengan:', isi);
+    if (!isi4) return;
+
+   // alert(isi4);
+
+   $(this).text(isi4);
+
+
+   })
+
+
+
+   $('.hapus').click(function(){
+    //alert(1)
+
+    let yakin = confirm('yakin mau menghapus?');
+    if(!yakin) return;
+
+    let id = $(this).prop('id');
+    //alert(id);
+
+    let rid = id.split('__');
+    let baris_ke = rid[1];
+
+    //alert(baris_ke); 
+
+    $('#row__'+baris_ke).slideUp()
+
+    //alert('Anda yakin')
+   })
+  
+  })
+</script>
+
+  </body>
+</html>

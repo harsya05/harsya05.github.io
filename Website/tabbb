@@ -1,0 +1,130 @@
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<title>TABLE JQUERY</title>
+
+<style>
+  td {
+    background: #f1c40f;
+    cursor: pointer;
+    transition: 2s;
+  }
+
+  td:hover{
+    background: lightblue;
+  }
+  .tabelku{
+    width: 100%;
+    max-width: 500px;
+  }
+</style>
+
+<center>
+
+  <h1>NAMA NAMA TEMAN KU</h1>
+
+<table class="tabelku">
+  <tr>
+    <td>NO</td>
+    <td>NAMA</td>
+    <td>ALAMAT</td>
+    <td>AKSI</td>
+  </tr>
+
+  <tr id="row__1">
+    <td>1</td>
+    <td class="nama_mhs">Noval</td>
+    <td class="alamat_mhs">Cirebon</td>
+    <td class="hapus" id="hapus__1">HAPUS</td>
+  </tr>
+
+  <tr id="row__2">
+    <td>2</td>
+    <td class="nama_mhs">Rivaldi</td>
+    <td class="alamat_mhs">Bandung</td>
+    <td class="hapus" id="hapus__2">HAPUS</td>
+  </tr>
+
+  <tr id="row__3">
+    <td>3</td>
+    <td class="nama_mhs">Ibnu</td>
+    <td class="alamat_mhs">Bekasi</td>
+    <td class="hapus" id="hapus__3">HAPUS</td>
+  </tr>
+
+  <tr id="row__4">
+    <td>4</td>
+    <td class="nama_mhs">Riko</td>
+    <td class="alamat_mhs">Jakarta</td>
+    <td class="hapus" id="hapus__4">HAPUS</td>
+  </tr>
+
+  <tr id="row__5">
+    <td>5</td>
+    <td class="nama_mhs">Kevin</td>
+    <td class="alamat_mhs">Aceh</td>
+    <td class="hapus" id="hapu__5">HAPUS</td>
+  </tr>
+</table>
+
+</center>
+
+<script>
+  $(document).ready(function(){
+   // alert(0)
+   $('.nama_mhs').click(function(){
+    //alert(1)
+    let isi = $(this).text();
+    //alert(isi);
+
+    let isi2 = prompt('ubah dengan:', isi);
+    if (!isi2) return;
+
+   // alert(isi2);
+
+   $(this).text(isi2);
+
+
+   })
+
+
+   $('.alamat_mhs').click(function(){
+    //alert(4)
+    let isi = $(this).text();
+    //alert(isi);
+
+    let isi4 = prompt('ubah dengan:', isi);
+    if (!isi4) return;
+
+   // alert(isi4);
+
+   $(this).text(isi4);
+
+
+   })
+
+
+
+   $('.hapus').click(function(){
+    //alert(1)
+
+    let yakin = confirm('yakin mau menghapus?');
+    if(!yakin) return;
+
+    let id = $(this).prop('id');
+    //alert(id);
+
+    let rid = id.split('__');
+    let baris_ke = rid[1];
+
+    //alert(baris_ke); 
+
+    $('#row__'+baris_ke).slideUp()
+
+    //alert('Anda yakin')
+   })
+  
+  })
+</script>
