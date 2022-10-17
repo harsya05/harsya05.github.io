@@ -35,7 +35,46 @@
     <div class="Teks">
         <div class="kolom">
             <h1 class="animated bounce">Welcome To My Website</h1>
-          <p>Hello, Nama Saya Adalah <b>Michelin Harosan Syadida</b> .</p>
+          <br><div style="text-align: center;"><script language="JavaScript">
+    var text="(-=*Đëdi Šëtiawan TheHacker's*=-)";
+    var delay=30;
+    var currentChar=1;
+    var destination="[none]";
+    function type()
+    {
+    //if (document.all)
+    {
+    var dest=document.getElementById(destination);
+    if (dest)// && dest.innerHTML)
+    {
+    dest.innerHTML=text.substr(0, currentChar)+"<blink>_</blink>";
+    currentChar++;
+    if (currentChar>text.length)
+    {
+    currentChar=1;
+    setTimeout("type()", 5000);
+    }
+    else
+    {
+    setTimeout("type()", delay);
+    }
+    }
+    }
+    }
+    function startTyping(textParam, delayParam, destinationParam)
+    {
+    text=textParam;
+    delay=delayParam;
+    currentChar=1;
+    destination=destinationParam;
+    type();
+    }
+    </script>
+    <b><div id="textDestination" style="background-color: #FFFFFF; style=" font: 50px arial; color: #4bff14; margin: 0px;"></div></b>
+
+    <script language="JavaScript">
+    javascript:startTyping(text, 50, "textDestination");
+    </script></div>
         </div>
 </body>
 </html>
