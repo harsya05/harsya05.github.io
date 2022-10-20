@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+body{
+    background-image: linear-gradient(aqua, white);
+     font-family: Comic Sans MS;
+    display: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+  h1{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#flip{
+    margin-top: 30px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+button{
+      border-radius: 10px;
+      height: 25px;
+      background-color: #80e0e6;
+      color: black;
+      text-shadow: 1px 1px 2pc white;
+      box-shadow: 1px 1px 1px grey;
+      width: 15%;
+      font-size: 15px;
+      margin-top: 20%;
+
+    }
+    button:hover{
+      color: white;
+      background-color: maroon;
+    }
+    .halo{
+        padding: 30px 20px;
+    }
+</style>
+</head>
+<body>
+ <Center><h1>P05 Jquery Sliding</h1></Center>
+<nav class="halo">
+ <div id="flip">Apa itu Jquery Sliding?</div>
+<div id="panel"><p>jQuery adalah library JavaScript yang cukup andal, ringkas, dan mempunyai fitur yang cukup lengkap. Library ini membuat pemrosesan di HTML seperti perubahan dan manipulasi dokumen, event handling, animasi, dan Ajax dapat menjadi lebih sederhana. Hal ini didukung dengan API yang mudah digunakan dan dapat bekerja di berbagai macam browser.
+    <br>
+    <br> 
+    Metode jQuery Sliding digunakan untuk menyembunyikan atau menampilkan elemen HTML dengan secara bertahap mengurangi atau menambah tinggi mereka (mis. Dengan menggesernya ke atas atau ke bawah).
+</p></div>
+</nav>
+<br>
+<div class="button">
+<center><a href="Portofolio.html"><button onclick="confirm('yakin untuk kembali?')" href>Kembali</button></a></Center>
+</div>
+</body>
+</html>
