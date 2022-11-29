@@ -85,6 +85,7 @@ h1{
 }
 h1:hover{
     font-weight: bold;
+    font-size: 50px;
 }
 .wrapper img{
     width: 4cm;
