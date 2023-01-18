@@ -8,7 +8,7 @@ body{
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     height: 222px;
-    background: url(bg.jpg) no-repeat;
+    background: white no-repeat;
     background-size: cover;
 }
 .wrapper{
@@ -21,7 +21,7 @@ body{
     font-weight: 800;
     float: left;
     font-family: 'comic sans ms';
-    color: white;
+    color: black;
 }
 .Logo a:hover{
     color: aqua;
@@ -38,7 +38,7 @@ nav{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url(bg.jpg);
+    background-image: white;
     z-index: 1;
     border-bottom: 5px solid black;
     margin-bottom: 90px;
@@ -53,7 +53,7 @@ nav ul li{
     float: left;
 }
 nav ul li a{
-    color: white;
+    color: black;
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -86,7 +86,7 @@ h1{
     font-weight: 800;
     font-size: 70px;
     margin-bottom: 50px;
-    color: white;
+    color: black;
     width: 100%;
     line-height: 50px;
     text-align: center;
@@ -98,7 +98,7 @@ a.tbl-biru{
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: white;
+    color: whitr;
     cursor: pointer;
     font-weight: bold;
     margin-left: 10px;
@@ -126,7 +126,7 @@ p{
     font-weight: bold;
 }
 .kolom p b{
-    color: white;
+    color: black;
     font-family: 'comic sans ms';
     cursor: pointer;
 }
