@@ -39,7 +39,7 @@ nav{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: white;
+    background: url(bg.jpg) no-repeat;
     z-index: 1;
     border-bottom: 5px solid black;
     margin-bottom: 90px;
