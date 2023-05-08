@@ -8,7 +8,7 @@ body{
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     height: 222px;
-    background: white no-repeat;
+    background: url(bg.jpg) no-repeat;
     background-size: cover;
 }
 .wrapper{
