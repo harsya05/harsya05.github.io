@@ -2,11 +2,13 @@
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+       background: url(bg.jpg) no-repeat;
 }
 body{
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
+    color; white;
     height: 222px;
     background: url(bg.jpg) no-repeat;
     background-size: cover;
@@ -21,7 +23,7 @@ body{
     font-weight: 800;
     float: left;
     font-family: 'comic sans ms';
-    color: black;
+    color: white;
 }
 .Logo a:hover{
     color: aqua;
@@ -53,7 +55,7 @@ nav ul li{
     float: left;
 }
 nav ul li a{
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -86,7 +88,7 @@ h1{
     font-weight: 800;
     font-size: 70px;
     margin-bottom: 50px;
-    color: black;
+    color: white;
     width: 100%;
     line-height: 50px;
     text-align: center;
@@ -98,7 +100,7 @@ a.tbl-biru{
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: whitr;
+    color: white;
     cursor: pointer;
     font-weight: bold;
     margin-left: 10px;
